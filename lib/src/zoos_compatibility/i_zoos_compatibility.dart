@@ -29,14 +29,9 @@ class CompatibilityResult {
   final Set<Element> balanced;
 
   //
-  final bool partnerIsBadForHealth;
-  final bool youBadForHealth;
-  final bool partnerIsProneToCheating;
-  final bool youAreProneToCheating;
-  final bool partnerCanBeAbusive;
-  final bool youCanBeAbusive;
-  final bool partnerIsWealthKiller;
-  final bool youAreWealthKiller;
+  final PartnerType partnerArchetype;
+  final PartnerType yourArchetype;
+  final bool archetypeMatch;
 
   const CompatibilityResult({
     required this.user,
@@ -53,14 +48,9 @@ class CompatibilityResult {
     required this.balanced,
 
     //
-    required this.partnerIsBadForHealth,
-    required this.youBadForHealth,
-    required this.partnerIsProneToCheating,
-    required this.youAreProneToCheating,
-    required this.partnerCanBeAbusive,
-    required this.youCanBeAbusive,
-    required this.partnerIsWealthKiller,
-    required this.youAreWealthKiller,
+    required this.partnerArchetype,
+    required this.yourArchetype,
+    required this.archetypeMatch,
   });
 
   @override
