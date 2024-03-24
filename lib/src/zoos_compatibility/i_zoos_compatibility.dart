@@ -18,6 +18,7 @@ class CompatibilityResult {
   final IDateZoo user;
   final IDateZoo partner;
   final Sex userSex;
+  final Sex partnerSex;
 
   //
   final bool perfectPartnerForYourElement;
@@ -37,6 +38,7 @@ class CompatibilityResult {
     required this.user,
     required this.partner,
     required this.userSex,
+    required this.partnerSex,
 
     //
     required this.perfectPartnerForYourElement,
