@@ -71,5 +71,6 @@ abstract class IZoosCompatibility {
     required IDateZoo user,
     required IDateZoo partner,
     required Sex userSex,
+    required Sex partnerSex,
   });
 }
