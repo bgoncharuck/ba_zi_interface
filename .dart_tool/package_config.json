@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "ba_zi_energy",
-      "rootUri": "file:///Users/volos/.pub-cache/git/ba_zi_energy-baf855b903c0f716956e085aefd8e74899b97586/",
+      "rootUri": "file:///Users/volos/.pub-cache/git/ba_zi_energy-9da938cc190d57e8b922298e469b18529f0fb461/",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -32,7 +32,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-03-24T13:23:01.923660Z",
+  "generated": "2024-03-25T10:59:08.869394Z",
   "generator": "pub",
   "generatorVersion": "3.3.1"
 }
