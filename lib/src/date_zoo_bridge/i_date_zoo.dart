@@ -6,7 +6,7 @@ import 'package:ba_zi_energy/ba_zi_energy.dart';
 /// ```
 abstract class AnimalCalculationStrategy {
   String get name;
-  AnimalSynergy calculate(DateTime dt);
+  AnimalSynergy calculate(DateTime dt, int timeZoneOffset);
 }
 
 /// ```Dart
