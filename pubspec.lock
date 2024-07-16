@@ -5,8 +5,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "9ff0c74d2591ed034f4291f313ec853d39d543d8"
-      resolved-ref: "9ff0c74d2591ed034f4291f313ec853d39d543d8"
+      ref: "319a5dfdaf533c1a7ae26fd7d7dc153b1571dc55"
+      resolved-ref: "319a5dfdaf533c1a7ae26fd7d7dc153b1571dc55"
       url: "https://github.com/bgoncharuck/ba_zi_energy.git"
     source: git
     version: "0.0.1"
