@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "ba_zi_energy",
-      "rootUri": "file:///Users/volos/.pub-cache/git/ba_zi_energy-319a5dfdaf533c1a7ae26fd7d7dc153b1571dc55/",
+      "rootUri": "file:///Users/volos/.pub-cache/git/ba_zi_energy-d5523ca99c3bafe6fcf4e3eaab77ee016e4fd7a3/",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -32,10 +32,10 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-07-16T22:44:29.177992Z",
+  "generated": "2024-11-09T17:34:41.942155Z",
   "generator": "pub",
-  "generatorVersion": "3.4.3",
+  "generatorVersion": "3.5.3",
   "flutterRoot": "file:///Users/volos/sdks/flutter",
-  "flutterVersion": "3.22.2",
+  "flutterVersion": "3.24.3",
   "pubCache": "file:///Users/volos/.pub-cache"
 }
