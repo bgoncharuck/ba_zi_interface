@@ -26,5 +26,5 @@ abstract class IDateZoo {
   List<Energy> get energies;
 
   String toString();
-  IDateZoo.fromString(String str);
+  IDateZoo Function(String str) get fromString;
 }
