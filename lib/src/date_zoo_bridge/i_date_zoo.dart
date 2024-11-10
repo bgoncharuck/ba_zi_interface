@@ -24,7 +24,4 @@ abstract class IDateZoo {
   AnimalSynergy get day;
   List<Animal> get animals;
   List<Energy> get energies;
-
-  String toString();
-  IDateZoo Function(String str) get fromString;
 }
