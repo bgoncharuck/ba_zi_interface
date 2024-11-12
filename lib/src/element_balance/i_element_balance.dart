@@ -53,11 +53,11 @@ class TenGods {
     required this.favorableCreation,
     required this.unfavorableCreation,
     //
-    required this.synergy,
+    required this.career,
     required this.conflict,
     //
-    required this.attractiveness,
-    required this.overwhelm,
+    required this.leech,
+    required this.partner,
   });
 
   final bool supported;
@@ -71,11 +71,11 @@ class TenGods {
   final EnergyRelation favorableCreation;
   final EnergyRelation unfavorableCreation;
 
-  final EnergyRelation synergy;
+  final EnergyRelation career;
   final EnergyRelation conflict;
 
-  final EnergyRelation attractiveness;
-  final EnergyRelation overwhelm;
+  final EnergyRelation partner;
+  final EnergyRelation leech;
 
   @override
   String toString() {
@@ -83,8 +83,8 @@ class TenGods {
         'favorableResource:$favorableResource,unfavorableResource:$unfavorableResource,'
         'friends:$friends,competitors:$competitors,'
         'favorableCreation:$favorableCreation,unfavorableCreation:$unfavorableCreation,'
-        'synergy:$synergy,conflict:$conflict,'
-        'attractiveness:$attractiveness,overwhelm:$overwhelm)';
+        'career:$career,conflict:$conflict,'
+        'leech:$leech,partner:$partner)';
   }
 
   static TenGods fromString(String str) {
@@ -96,10 +96,10 @@ class TenGods {
     final competitorsStr = csvParts[4].split(':')[1];
     final favorableCreationStr = csvParts[5].split(':')[1];
     final unfavorableCreationStr = csvParts[6].split(':')[1];
-    final synergyStr = csvParts[7].split(':')[1];
+    final careerStr = csvParts[7].split(':')[1];
     final conflictStr = csvParts[8].split(':')[1];
-    final attractivenessStr = csvParts[9].split(':')[1];
-    final overwhelmStr = csvParts[10].split(':')[1];
+    final leechStr = csvParts[9].split(':')[1];
+    final partnerStr = csvParts[10].split(':')[1];
 
     final supported = bool.parse(supportedStr);
     final favorableResource = EnergyRelation.fromString(favorableResourceStr);
@@ -110,10 +110,10 @@ class TenGods {
     final favorableCreation = EnergyRelation.fromString(favorableCreationStr);
     final unfavorableCreation =
         EnergyRelation.fromString(unfavorableCreationStr);
-    final synergy = EnergyRelation.fromString(synergyStr);
+    final career = EnergyRelation.fromString(careerStr);
     final conflict = EnergyRelation.fromString(conflictStr);
-    final attractiveness = EnergyRelation.fromString(attractivenessStr);
-    final overwhelm = EnergyRelation.fromString(overwhelmStr);
+    final leech = EnergyRelation.fromString(leechStr);
+    final partner = EnergyRelation.fromString(partnerStr);
 
     return TenGods(
       supported: supported,
@@ -127,15 +127,15 @@ class TenGods {
       favorableCreation: favorableCreation,
       unfavorableCreation: unfavorableCreation,
       //
-      synergy: synergy,
+      career: career,
       conflict: conflict,
       //
-      attractiveness: attractiveness,
-      overwhelm: overwhelm,
+      leech: leech,
+      partner: partner,
     );
   }
 }
 
 abstract class IElementBalance {
-  TenGods elementBalance(IDateZoo zoo);
+  TenGods elementBalance(IDateZoo zoo, Sex sex);
 }
