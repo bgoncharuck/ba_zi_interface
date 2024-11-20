@@ -42,3 +42,13 @@ abstract class AnnualPeriod {
     required int nextYears,
   });
 }
+
+abstract class GenerateTransitionYearsStrategy {
+  TransitionYearsFromPeriods gen({
+    required List<PeriodOfLuck> decades,
+    required int birthYear,
+    required AnimalSynergy month,
+    required AnimalSynergy day,
+    required AnimalSynergy? hour,
+  });
+}
