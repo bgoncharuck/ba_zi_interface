@@ -13,6 +13,18 @@ class PeriodOfLuck {
   final int age;
 }
 
+class TransitionYearsFromPeriods {
+  const TransitionYearsFromPeriods({
+    required this.teen,
+    required this.adult,
+    required this.authority,
+  });
+
+  final int teen;
+  final int adult;
+  final int authority;
+}
+
 abstract class TransitionDate {
   DateTime transition(DateTime dt);
 }
