@@ -36,6 +36,18 @@ class AnimalCalculationStrategyParams {
     final json = jsonDecode(jsonString) as Map<String, dynamic>;
     return AnimalCalculationStrategyParams.fromJson(json);
   }
+
+  AnimalCalculationStrategyParams copyWith({
+    int? timeZoneOffset,
+    int? sunRiseHour,
+    int? sunRiseMinute,
+  }) {
+    return AnimalCalculationStrategyParams(
+      timeZoneOffset: timeZoneOffset ?? this.timeZoneOffset,
+      sunRiseHour: sunRiseHour ?? this.sunRiseHour,
+      sunRiseMinute: sunRiseMinute ?? this.sunRiseMinute,
+    );
+  }
 }
 
 /// ```Dart
