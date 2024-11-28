@@ -15,19 +15,19 @@ class SelectorParams {
     required this.day,
     required this.month,
     required this.year,
-    required this.timeZoneOffset,
+    required this.calcParams,
   });
   final DateTime from;
   final DateTime to;
   final Set<AnimalSynergy> day;
   final Set<AnimalSynergy> month;
   final Set<AnimalSynergy> year;
-  final int timeZoneOffset;
+  final AnimalCalculationStrategyParams calcParams;
 
   factory SelectorParams.fromParams({
     required DateTime from,
     required DateTime to,
-    required int timeZoneOffset,
+    required AnimalCalculationStrategyParams calcParams,
     Set<Element>? dayElement,
     Set<Animal>? dayAnimal,
     Set<Element>? monthElement,
@@ -38,7 +38,7 @@ class SelectorParams {
       SelectorParams(
         from: from,
         to: to,
-        timeZoneOffset: timeZoneOffset,
+        calcParams: calcParams,
         day: createAnimalSet(dayAnimal ?? {}, dayElement ?? {}),
         month: createAnimalSet(monthAnimal ?? {}, monthElement ?? {}),
         year: createAnimalSet(yearAnimal ?? {}, yearElement ?? {}),
@@ -47,7 +47,7 @@ class SelectorParams {
   factory SelectorParams.fromMonthYearParams({
     required DateTime from,
     required DateTime to,
-    required int timeZoneOffset,
+    required AnimalCalculationStrategyParams calcParams,
     required Set<AnimalSynergy> day,
     Set<Element>? monthElement,
     Set<Animal>? monthAnimal,
@@ -57,7 +57,7 @@ class SelectorParams {
       SelectorParams(
         from: from,
         to: to,
-        timeZoneOffset: timeZoneOffset,
+        calcParams: calcParams,
         day: day,
         month: createAnimalSet(monthAnimal ?? {}, monthElement ?? {}),
         year: createAnimalSet(yearAnimal ?? {}, yearElement ?? {}),
