@@ -58,12 +58,14 @@ class ElementRelation {
 class EnergyRoad {
   const EnergyRoad({
     required this.supported,
+    required this.mainElement,
     required this.zoo,
     required this.sex,
     required this.relations,
   });
 
   final bool supported;
+  final Energy mainElement;
   final IDateZoo zoo;
   final Sex sex;
   final List<ElementRelation> relations;
