@@ -29,7 +29,7 @@ class ElementRelation {
   /// create to String from String methods,
   @override
   String toString() {
-    return 'animal:$animal,relation:$relation,favorable:$stem)';
+    return 'animal:$animal,relation:$relation,stem:$stem)';
   }
 
   static ElementRelation fromString(String str) {
@@ -67,6 +67,11 @@ class EnergyRoad {
   final IDateZoo zoo;
   final Sex sex;
   final List<ElementRelation> relations;
+
+  @override
+  String toString() {
+    return 'supported:$supported,sex:$sex,relations:$relations,zoo:$zoo';
+  }
 }
 
 abstract class IElementBalance {
