@@ -3,28 +3,28 @@ import 'package:ba_zi_energy/ba_zi_energy.dart';
 
 class AnimalCalculationStrategyParams {
   final int timeZoneOffset;
-  final int sunRiseHour;
-  final int sunRiseMinute;
+  final int sunSetHour;
+  final int sunSetMinute;
 
   const AnimalCalculationStrategyParams({
     required this.timeZoneOffset,
-    required this.sunRiseHour,
-    required this.sunRiseMinute,
+    required this.sunSetHour,
+    required this.sunSetMinute,
   });
 
   Map<String, dynamic> toJson() {
     return {
       'timeZoneOffset': timeZoneOffset,
-      'sunRiseHour': sunRiseHour,
-      'sunRiseMinute': sunRiseMinute,
+      'sunSetHour': sunSetHour,
+      'sunSetMinute': sunSetMinute,
     };
   }
 
   factory AnimalCalculationStrategyParams.fromJson(Map<String, dynamic> json) {
     return AnimalCalculationStrategyParams(
       timeZoneOffset: json['timeZoneOffset'] as int,
-      sunRiseHour: json['sunRiseHour'] as int,
-      sunRiseMinute: json['sunRiseMinute'] as int,
+      sunSetHour: json['sunSetHour'] as int,
+      sunSetMinute: json['sunSetMinute'] as int,
     );
   }
 
@@ -39,13 +39,13 @@ class AnimalCalculationStrategyParams {
 
   AnimalCalculationStrategyParams copyWith({
     int? timeZoneOffset,
-    int? sunRiseHour,
-    int? sunRiseMinute,
+    int? sunSetHour,
+    int? sunSetMinute,
   }) {
     return AnimalCalculationStrategyParams(
       timeZoneOffset: timeZoneOffset ?? this.timeZoneOffset,
-      sunRiseHour: sunRiseHour ?? this.sunRiseHour,
-      sunRiseMinute: sunRiseMinute ?? this.sunRiseMinute,
+      sunSetHour: sunSetHour ?? this.sunSetHour,
+      sunSetMinute: sunSetMinute ?? this.sunSetMinute,
     );
   }
 }
