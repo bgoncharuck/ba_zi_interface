@@ -4,14 +4,14 @@ version: 0.0.1
 publish_to: none
 
 environment:
-  sdk: '>=3.2.6 <4.0.0'
+  sdk: '>=3.7.0 <4.0.0'
 
 dependencies:
   ba_zi_energy:
     git: 
       url: https://github.com/bgoncharuck/ba_zi_energy.git
-      ref: 64f48d97bae0daca19f84b64708b9f9b39461baf
+      ref: b12e9fd638f42faae439594505ebb30dc70d415c
 
 dev_dependencies:
-  flutter_lints: ^3.0.1
-  very_good_analysis: ^5.1.0
+  flutter_lints: ^5.0.0
+  very_good_analysis: ^6.0.0
