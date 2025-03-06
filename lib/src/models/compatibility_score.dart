@@ -1,9 +1,9 @@
 enum ZooCompatibilityScore {
-  problematic(0),
-  needsWork(400),
-  compatible(900),
-  excellent(1200),
-  perfect(1700);
+  problematic(400),
+  needsWork(800),
+  compatible(1200),
+  excellent(1400),
+  perfect(1600);
 
   final int score;
   const ZooCompatibilityScore(this.score);
