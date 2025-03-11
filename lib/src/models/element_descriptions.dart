@@ -6,12 +6,13 @@ class ElementDescriptions {
     required this.elementBalance,
     required this.twelveSpheres,
   }) {
-    if (twelveSpheres == null) {
-      relateAnimals = {};
-    } else {
-      relateAnimals = {
-        for (var i = 0; i <= 11; i++) twelveSpheres![i]!.animal: i,
-      };
+    relatePalaceAnimals = {};
+    relatePalaceFlavors = {};
+    if (twelveSpheres != null) {
+      for (var i = 0; i <= 11; i++) {
+        relatePalaceAnimals[twelveSpheres![i]!.animal] = i;
+        relatePalaceFlavors[twelveSpheres[i]!.flavor] = i;
+      }
     }
 
     relateElements = {
@@ -23,5 +24,6 @@ class ElementDescriptions {
   final Map<int, AnimalSynergy>? twelveSpheres;
 
   late final Map<Energy, RelationArchetype> relateElements;
-  late final Map<Animal, int> relateAnimals;
+  late final Map<Animal, int> relatePalaceAnimals;
+  late final Map<Energy, int> relatePalaceFlavors;
 }
