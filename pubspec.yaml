@@ -10,7 +10,7 @@ dependencies:
   ba_zi_energy:
     git: 
       url: https://github.com/bgoncharuck/ba_zi_energy.git
-      ref: 70641c7eccb70ce05789dedfaefb7df0a7c96384
+      ref: eeba3f9e1569216810b30df45cb9540131894963
 
 dev_dependencies:
   flutter_lints: ^5.0.0
