@@ -9,16 +9,16 @@ enum ZooCompatibilityScore {
   const ZooCompatibilityScore(this.score);
 
   static ZooCompatibilityScore fromScore(int score) {
-    if (score < problematic.score) {
-      return problematic;
-    } else if (score < needsWork.score) {
-      return needsWork;
-    } else if (score < compatible.score) {
-      return compatible;
-    } else if (score < excellent.score) {
-      return excellent;
-    } else {
+    if (score >= perfect.score) {
       return perfect;
+    } else if (score >= excellent.score) {
+      return excellent;
+    } else if (score >= compatible.score) {
+      return compatible;
+    } else if (score >= needsWork.score) {
+      return needsWork;
+    } else {
+      return problematic;
     }
   }
 
