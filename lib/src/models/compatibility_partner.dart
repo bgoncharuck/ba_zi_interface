@@ -12,4 +12,16 @@ class CompatibilityPartner {
   final IDateZoo zoo;
   final Sex sex;
   final ElementDescriptions descriptions;
+
+  CompatibilityPartner copyWith({
+    IDateZoo? zoo,
+    Sex? sex,
+    ElementDescriptions? descriptions,
+  }) {
+    return CompatibilityPartner(
+      zoo: zoo ?? this.zoo,
+      sex: sex ?? this.sex,
+      descriptions: descriptions ?? this.descriptions,
+    );
+  }
 }
