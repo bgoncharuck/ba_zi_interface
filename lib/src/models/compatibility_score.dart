@@ -15,7 +15,7 @@ enum ZooCompatibilityScore {
       return excellent;
     } else if (score >= needsWork.score) {
       return compatible;
-    } else if (score > problematic.score) {
+    } else if (score >= problematic.score) {
       return needsWork;
     } else {
       return problematic;
