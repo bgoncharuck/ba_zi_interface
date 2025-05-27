@@ -1,7 +1,7 @@
 enum ZooCompatibilityScore {
   problematic(275),
   needsWork(400),
-  compatible(600),
+  compatible(550),
   excellent(700),
   perfect(850);
 
