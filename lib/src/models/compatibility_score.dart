@@ -1,9 +1,9 @@
 enum ZooCompatibilityScore {
-  problematic(250),
+  problematic(275),
   needsWork(400),
   compatible(600),
   excellent(700),
-  perfect(900);
+  perfect(850);
 
   final int score;
   const ZooCompatibilityScore(this.score);
@@ -11,7 +11,7 @@ enum ZooCompatibilityScore {
   static ZooCompatibilityScore fromScore(int score) {
     if (score >= perfect.score) {
       return perfect;
-    } else if (score >= compatible.score) {
+    } else if (score >= excellent.score) {
       return excellent;
     } else if (score >= needsWork.score) {
       return compatible;
