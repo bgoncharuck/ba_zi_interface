@@ -11,7 +11,7 @@ class ElementDescriptions {
     if (twelveSpheres != null) {
       for (var i = 0; i <= 11; i++) {
         relatePalaceAnimals[twelveSpheres![i]!.animal] = i;
-        relatePalaceFlavors[twelveSpheres![i]!.flavor] ??= i;
+        // relatePalaceFlavors[twelveSpheres![i]!.flavor] ??= i;
       }
     }
 
