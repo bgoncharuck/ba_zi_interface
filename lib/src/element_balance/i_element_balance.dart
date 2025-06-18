@@ -77,5 +77,5 @@ class EnergyRoad {
 }
 
 abstract class IElementBalance {
-  EnergyRoad elementBalance(IDateZoo zoo, Sex sex);
+  EnergyRoad elementBalance(IDateZoo zoo, Sex sex, {int timeZoneOffset = 42});
 }
