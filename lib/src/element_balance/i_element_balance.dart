@@ -8,10 +8,10 @@ enum RelationArchetype {
   Character,
   FormalActions,
   RadicalActions,
-  EntrepreneurOpportunity,
-  Enemy,
-  PartnerOpportunity,
-  ServiceOpportunity,
+  DirectWealth,
+  IndirectWealth,
+  DirectPower,
+  IndirectPower,
 }
 
 class ElementRelation {
